@@ -15,7 +15,7 @@ Please be aware that the concord server will communicate to your Concord 4 Panel
 
 ## Installation
 
-These instruction assume you have Hubitat Security Monitor set up already.
+These instruction assume you have <a href="https://docs.hubitat.com/index.php?title=Hubitat_Safety_Monito">Hubitat Security Monitor</a> set up already. 
 
  1. Download all files from this repository
  2. Navigate to your Hubitat home page
