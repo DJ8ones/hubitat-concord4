@@ -36,7 +36,7 @@ These instruction assume you have Hubitat Security Monitor set up already.
  17. Navigate to the Concord4 device you just created.
  18. Scroll down to the preferences.
  19. Fill in the IP address of your Concord 4 Server (we haven't set it up yet, but you should know the IP address to your raspberry pi). Keep the port number as-is. 
- 20. You'll need to sync some data with the .conf file that you will be using on the raspberry pi. Go to the *concordsvr* folder of this repo and open the "concordsvr.conf" file.
+ 20. You'll need to sync some data with the .conf file that you will be using on the raspberry pi. Go to the *concordsvr* folder of this repo and open the *concordsvr.conf* file.
  21. In both the .conf file and the device prefernces page, enter a password (make one up... they just need to be the same in both places), the Maker API App ID, and Maker API Authentication Token. The .conf file has instruction on how to get the App ID and token.
  22. You'll need to know the setup of your Concord 4 for this step. It has been setup up that certain contacts are in certain "zones". You may have to play around to figure out which zone is which. If you know what Zones 1-4 are, then give those a name in the device preferences page, but leave any unused zone names blank.
  23. Click **Save Device**. 
