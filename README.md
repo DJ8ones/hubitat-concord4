@@ -49,7 +49,7 @@ These instruction assume you have <a href="https://docs.hubitat.com/index.php?ti
  30. Setting up your dashboard is outside of the scope of these instructions, but it is good to point out that the driver sets up four virtual switches: Disarm, Arm Home, Arm Away, and Silence. Silence works by itself and when it's on, the Concord 4 will beep on state changes. The other three switches are tied together in the driver code such that they work like buttons. They _should_ mirror the state of the Concord 4 device at all times. I also use the Concord 4 device with the security keypad template to show the status.
  31. Login to your Pi and install python and the packages (see prerequisites) via pip (if not already installed). Note that default raspbian comes with it, as does NOOBS
  32. Copy the entire *concordsvr* into a directory you can access, such as *~/*. You can use *git clone* as an easy way to get it from the repository.
- 33. Replace *consordsvr.conf* with the one we edited. Alternatively, edit *concordsvr.conf* with your favourite editor, such as *nano concordsvr.conf*
+ 33. Replace *concordsvr.conf* with the one we edited. Alternatively, edit *concordsvr.conf* with your favourite editor, such as *nano concordsvr.conf*
  34.  Start the program using *python concordsvr.py*
  35. You'll also need to handle restarting the script at any reboot. I used supervisord, but you can use whatever you're comfortable with. This is beyond the scope of these instructions.
  36. If all went well, the Hubitat side will automatically populate info the python server needs to communicate to individual children devices. If this doesn't work, you can use the **Send Concord Config** command which is listed on the security panel's parent device page of Hubitat.
